@@ -1,0 +1,28 @@
+{
+  "name": "react-lumen-app",
+  "version": "1.0.0",
+  "description": "A simple app comprised of a React front-end communicating with a Lumen back-end for handling API requests.",
+  "main": "index.js",
+  "scripts": {
+    "front": "npm start --prefix front",
+    "back": "cd back && php -S 127.0.0.1:8000 -t public",
+    "dev": "concurrently \"npm run front\" \"npm run back\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BryceStPierre/react-lumen-app.git"
+  },
+  "keywords": [
+    "react",
+    "lumen"
+  ],
+  "author": "Bryce St. Pierre",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/BryceStPierre/react-lumen-app/issues"
+  },
+  "homepage": "https://github.com/BryceStPierre/react-lumen-app#readme",
+  "devDependencies": {
+    "concurrently": "^4.1.1"
+  }
+}
